@@ -1,24 +1,24 @@
-# 🔐 Secure Network Design for MboaTech SARL
+#  Secure Network Design for MboaTech SARL
 
 > **OpenMind Academy — Test de sélection 2026**  
-> Sujet 2 : Réseau | Niveau : Licence 2 Informatique
+> Sujet 2 : Réseau Informatique 
 
 ---
 
-## 📌 Titre du projet
+##  Titre du projet
 
 **Secure Network Design for MboaTech SARL**  
 Conception et simulation d'un réseau sécurisé pour une PME de 45 employés.
 
 ---
 
-## 🗂️ Domaine choisi
+##  Domaine choisi
 
 **Réseau informatique** — Segmentation par VLANs, routage inter-VLAN, DHCP et contrôle d'accès par ACL.
 
 ---
 
-## 🧩 Problème traité
+## Problème traité
 
 MboaTech SARL, une PME basée à Yaoundé, souhaitait moderniser son infrastructure réseau interne. Le problème principal était l'absence de segmentation : tous les employés étaient sur le même réseau, ce qui posait des risques de sécurité (un visiteur pouvait accéder aux fichiers administratifs, par exemple).
 
@@ -30,18 +30,18 @@ L'objectif était de concevoir un réseau où :
 
 ---
 
-## 🛠️ Outils utilisés
+## Outils utilisés
 
 | Outil | Usage |
 |-------|-------|
-| Cisco Packet Tracer 9.0.0 | Simulation du réseau |
+| Cisco Packet Tracer      | Simulation du réseau |
 | Git | Versionnement du projet |
 | GitHub | Publication du dépôt |
 | Microsoft Word | Documentation |
 
 ---
 
-## 📁 Structure du dépôt
+## Structure du dépôt
 
 ```
 mboatech-secure-network-design/
@@ -63,23 +63,23 @@ mboatech-secure-network-design/
 │   ├── 12_ping_dev_bloque.png
 │   └── 13_ping_support_bloque.png
 └── /docs
-    └── architecture_mboatech.docx   # Document d'architecture complet
+    └── architecture_mboatech.pdf   # Document d'architecture complet
 ```
 
 ---
 
-## ⚙️ Instructions d'installation
+##  Instructions d'installation
 
-1. Télécharger et installer **Cisco Packet Tracer 9.0.0** : [https://www.netacad.com](https://www.netacad.com)
+1. Télécharger et installer **Cisco Packet Tracer ** : [https://www.netacad.com](https://www.netacad.com)
 2. Cloner ce dépôt :
 ```bash
-git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
+git clone https://github.com/Akhash-42/mboatech-secure-network-design.git
 ```
 3. Ouvrir le fichier `/src/test_zeinab.pkt` dans Cisco Packet Tracer
 
 ---
 
-## ▶️ Instructions pour lancer le projet
+##  Instructions pour lancer le projet
 
 1. Ouvrir le fichier `.pkt` dans Cisco Packet Tracer
 2. Cliquer sur le bouton **Play** (temps réel) en bas à gauche
@@ -88,7 +88,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## ✅ Fonctionnalités réalisées
+## Fonctionnalités réalisées
 
 - [x] Topologie réseau complète avec 1 routeur + 6 switches
 - [x] 5 VLANs configurés (ADMIN, DEV, SUPPORT, GUEST, SERVERS)
@@ -96,11 +96,11 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 - [x] Serveur DHCP configuré sur le routeur (4 pools)
 - [x] 3 serveurs internes (Server-Admin, Server-App, Server-Web)
 - [x] ACL configurées et appliquées sur les 4 sous-interfaces
-- [x] Tests de validation : accès autorisés ✅ et refusés ❌
+- [x] Tests de validation : accès autorisés  et refusés 
 
 ---
 
-## 🔒 Règles de sécurité (ACL)
+## Règles de sécurité (ACL)
 
 | VLAN Source | Server-Admin | Server-App | Server-Web | Internet |
 |-------------|:------------:|:----------:|:----------:|:--------:|
@@ -111,7 +111,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## 🌐 Table d'adressage IP
+##  Table d'adressage IP
 
 | Équipement | Adresse IP | Masque | VLAN |
 |------------|------------|--------|------|
@@ -130,7 +130,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 ### Topologie globale
 ![Topologie](screenshots/01_topologie_globale.png)
@@ -149,7 +149,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## ⚠️ Difficultés rencontrées
+##  Difficultés rencontrées
 
 - **Configuration des ACL** : comprendre l'ordre des règles `permit`/`deny` et leur impact sur le trafic. Une règle mal placée bloquait tout le réseau.
 - **Routage inter-VLAN** : bien associer chaque sous-interface au bon VLAN avec l'encapsulation `dot1Q`.
@@ -158,7 +158,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## 💡 Améliorations possibles
+##  Améliorations possibles
 
 - Ajouter un pare-feu Cisco ASA pour un filtrage plus avancé
 - Configurer un VPN pour l'accès sécurisé à distance
@@ -168,7 +168,7 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## 📚 Ce que j'ai appris
+##  Ce que j'ai appris
 
 - La segmentation réseau par VLANs est essentielle pour isoler les départements et protéger les ressources sensibles
 - Les ACL sont puissantes mais l'ordre des règles est critique : une mauvaise séquence peut tout bloquer
@@ -178,9 +178,9 @@ git clone https://github.com/TON_USERNAME/mboatech-secure-network-design.git
 
 ---
 
-## 📄 Documents
+##  Documents
 
-- 📘 [Document d'architecture complet](docs/architecture_mboatech.docx)
+-  [Document d'architecture complet](docs/architecture_mboatech.docx)
 
 ---
 
